@@ -1,0 +1,30 @@
+
+<mat-card class="">
+	<mat-card-header>
+		
+	</mat-card-header>
+	<mat-card-content>	
+	<div class="content-wrapper">
+		<h2 class="skills-title">{{skillTitle}}</h2>		
+		<div class="centered line"></div>
+
+		<div class="skill-label" *ngFor="let skills of skillsList">
+			<i class ="fa fa-bolt"></i>
+			<label >{{skills}}</label>
+		</div>
+	</div>
+
+	<div class="content-wrapper">
+			
+			<h4>Most Frequently used tools</h4>
+
+			<ul>
+				<li  *ngFor="let tools of toolsList">
+					<label >{{tools}} </label>
+				</li>
+			</ul>
+
+
+		</div>
+</mat-card-content>
+</mat-card>

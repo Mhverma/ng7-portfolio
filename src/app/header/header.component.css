@@ -1,0 +1,53 @@
+.btn-social {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 29px;
+    margin-left: 0.5em;
+}
+
+.btn-outline {
+    margin-top: 15px;
+    border: solid 2px #fff;
+    font-size: 20px;
+    color: #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+ .navbar-expand .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+.navbar-brand{
+    float:left;
+    padding:19.5px 15px;
+    font-size:19px;
+    line-height:21px;
+    height:60px
+}
+
+.navbar-fixed-bottom{
+    bottom:0;
+    margin-bottom:0;
+    border-width:1px 0 0
+}
+
+
+
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}

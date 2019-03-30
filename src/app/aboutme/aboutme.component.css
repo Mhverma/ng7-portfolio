@@ -1,0 +1,26 @@
+.aboutme {
+	max-width: 100%;
+	color: #fff;
+	background: #18bc9c;
+}
+
+.welcome{
+	height: 34px;
+	width: 30px;
+	text-align: left;
+	line-height: 37px;
+	font-size: 38px;
+   }
+
+
+
+.intro-text {
+    display: block;
+    font-weight: normal;
+    font-family: 'Open Sans', 'Verdana', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    color:rgb(99,99,99);
+    text-align: justify;
+    text-rendering: inherit;
+
+}

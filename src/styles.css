@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body{
+	background-color: #e9ecef;
+}
+
+body.custom-background {
+    background-color: #0a0000;
+    background-image: url(./assets/img/pattern_victorian_black.jpg);
+    background-position: center top;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
