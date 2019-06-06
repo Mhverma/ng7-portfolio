@@ -24,3 +24,81 @@
     text-rendering: inherit;
 
 }
+.work-history {
+    text-align: left;
+    border-top: 1px solid #ebecf1;
+    margin: 0 -21px;
+    padding: 0 20px;
+    position: relative;
+}
+.work-history-title {
+    margin-bottom: 80px;
+}
+.work-history .position {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: .6px;
+    color: #2c2c2c;
+    margin-top: -10px;
+}
+
+.work-history .working-period, .work-history  .working-at{
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: 300;
+    color: #2b2d35;
+}
+
+.work-history .details .company-logo {
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+    margin-top: -10px;
+}
+
+.work-history p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.work-history .work-history-info {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-history .history-item {
+    border-left: 1px solid #e5e7ec;
+    padding-left: 20px;
+    min-height: 100px;
+    display: flex;
+    position: relative;
+}
+
+.work-history .details {
+    min-height: 70px;
+    width: 80%;
+    display: flex;
+    top: -20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.work-history .details .info-wrapper {
+    width: calc(100% - 64px);
+}
+
+.work-history .duration:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #d1d7e0;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 10px;
+    box-shadow: 0 0 0 10px #fff;
+}

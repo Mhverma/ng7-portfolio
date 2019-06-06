@@ -13,13 +13,13 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { HomeComponent } from './home/home.component';
-import { FlexLayoutModule } from "@angular/flex-layout";
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { PostListComponent } from './post-list/post-list.component';
 
-import { PostService }  from './services/post.service';
+import { PostService } from './services/post.service';
 import { HttpClientModule } from '@angular/common/http';
-import { SkillsetComponent } from './skillset/skillset.component';
-
+import { MatStepperModule } from '@angular/material/stepper';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -30,8 +30,7 @@ import { SkillsetComponent } from './skillset/skillset.component';
     ProjectsComponent,
     ContactComponent,
     HomeComponent,
-    PostListComponent,
-    SkillsetComponent
+    PostListComponent
   ],
   imports: [
     BrowserModule,
@@ -41,8 +40,9 @@ import { SkillsetComponent } from './skillset/skillset.component';
     MatToolbarModule,
     MatGridListModule,
     MatCardModule,
-    FlexLayoutModule
-
+    FlexLayoutModule,
+    MatStepperModule,
+    MatFormFieldModule
   ],
   providers: [
     PostService

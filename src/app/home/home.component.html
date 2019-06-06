@@ -1,50 +1,92 @@
-<div class ="container"
-	fxLayout="row wrap"
-	fxLayout.xs="column"
-	fxLayoutAlign="center"
-	fxLayoutGap="10px"
-    fxLayoutGap.xs="0">
+<!-- The grid-->
+<div class="w3-row-padding w3-content w3-light-grey ">
+	<!--Left column-->
+	<div class="w3-third w3-margin-top w3-margin-bottom">
 
-   <div class="item header" fxFlex="100%">
-	   	<mat-card class="aboutme-header-card">
-			<img mat-card-avatar src="/../assets/img/me.JPG" alt="">
-			<mat-card-content>
-				<div class="intro-text">
-					<span class="name">Manoj H Verma</span>
-					<hr>
-					<span class="skills">Software Engineer - Web & Java Application Developer, Mumbai,  India</span>
+		<div class="w3-white w3-text-grey w3-card-4">
+			<div class="w3-display-container">
+
+				<img src="/../assets/img/me.JPG" class="avatar" alt="Avatar">
+				<div class="w3-container w3-center w3-text-black">
+					<h2>Manoj Verma</h2>
 				</div>
-			</mat-card-content>
+			</div>
 
-		</mat-card>
-   </div>
-	  
-</div>
+			<!--Personal info-->
+			<div class="w3-display-container w3-container ">
+				<p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Senior Java Developer</p>
+				<p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Mumbai, India</p>
+				<p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>manojkumarhverma@gmail.com</p>
+				<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>8087398291</p>
+				<hr>
+			</div>
+			<div class="w3-container">
+				<p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+				<div #skills *ngFor ="let skill of skills">
+					<p>{{skill.name}}</p>
+					<div class="w3-light-grey w3-round-xlarge w3-small">
+						<div class="w3-container w3-center w3-round-xlarge w3-teal" [style.width] = "skill.level">{{skill.level}}</div>
+					</div>
+					<hr>					
+				</div>
+				
+				<div #languages>
+						<p class="w3-large w3-text-theme"><b><i
+							class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+					<p>English</p>
+					<div class="w3-light-grey w3-round-xlarge">
+						<div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+					</div>
+					<p>Hindi</p>
+					<div class="w3-light-grey w3-round-xlarge">
+						<div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+					</div>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<br>
+	<!--Right column-->
+	<div class="w3-twothird w3-margin-top">
+		<div class="w3-container w3-card w3-white w3-margin-bottom">
+			<h2 class="w3-text-grey w3-padding-16"><i
+					class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+			<div class="w3-container" *ngFor="let work of workExperience">
+				<h4 class="w3-opacity"><b>{{work.role}} </b></h4>
+				<h6 class="w3-opacity"><b>{{work.company}}</b></h6>
+				<h6 class="w3-text-teal">
+					<i class="fa fa-calendar fa-fw w3-margin-right"></i>
+					{{work.startDate}} - 
+					<span *ngIf = "work.endDate === 'Current'; else endDate"	class="w3-tag w3-teal w3-round">{{work.endDate}}</span>
+					<ng-template #endDate >
+							{{work.endDate}}
+					</ng-template>
+				</h6>
+				<p>{{work.summary}}</p>
+				<hr>
+			</div>
+		</div>
+		<!--Education-->
+		<div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+					<h4 class="w3-opacity"><b>Computer Science & Engineering</b></h4>
+					<h6 class="w3-opacity"><b>Nagpur University, Nagpur, India</b></h6>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun- 2009 - May- 2013</h6>
+          <p>Completed Bachelor of Engineering in Computer Science and Engineering from Nagpur University with 72.00%.</p>
+				</div>
+			</div>
 
-<div class ="container"
-	fxLayout="row wrap"
-	fxLayout.xs="column"
-	fxLayoutAlign="center"
-	fxLayoutGap="10px"
-    fxLayoutGap.xs="0">
-
-  <!--  <div class="item header" fxFlex="60%" style="background-color: white">
-	   <app-post-list></app-post-list>
-   </div> -->
-
-    <div class="item header" fxFlex="100%" style="background-color: white">
-		<app-skillset></app-skillset>
-   </div>
-	  
-</div>
-
-
-
-
-
-
+			<div class="w3-container w3-card w3-white w3-margin-top">
+					<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Certification</h2>
+					<div class="w3-container">
+						<h6 class="w3-opacity"><b>Big Data and Hadoop</b></h6>
+						<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+						<p>Collebera Tact.</p>
+					</div>
+				</div>
 			
-		
+	</div>
 
+</div>
