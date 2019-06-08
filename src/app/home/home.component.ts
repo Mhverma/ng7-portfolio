@@ -24,8 +24,8 @@ export class HomeComponent implements OnInit {
   setSkills() {
     this.skills.push( new Skills( 'Java 8, Core Java', 80));
     this.skills.push( new Skills( 'Framworks: Spring Boot, Spring MVC, Hibernate', 80));
-    this.skills.push( new Skills( 'Frontend: Angular, Angular Material BootStrap, Html & CSS', 60));
-    this.skills.push( new Skills( 'Database : Oracle, MySql, sql', 50));
+    this.skills.push( new Skills( 'Frontend: Angular, Angular Material BootStrap, Html & CSS',70));
+    this.skills.push( new Skills( 'Database : Oracle, MySql, sql', 60));
   }
 
   setLanguage() {
