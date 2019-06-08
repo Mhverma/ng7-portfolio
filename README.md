@@ -1,5 +1,4 @@
-# Ng7Portfolio
-
+# Ng7Portfolio  ![ALT TEXT](https://travis-ci.org/Mhverma/ng7-portfolio.svg?branch=master)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
 
 ## Development server
